@@ -44,10 +44,10 @@
                     </div>
                 </div>
             </div> -->
-            <div class="grid grid-cols-3 w-12/12 justify-items-center">
+            <div class="grid grid-cols-3 w-11/12 justify-items-center">
                 <div class="container flex flex-col items-center justify-center gap-3">
                     <h1 class="text-6xl transition duration-300 opacity-0" :class="{'opacity-100 transition duration-300':showAboutSectionTitle == true}">Hi! I'm Noah</h1>
-                    <img class="w-9/12 rounded-2xl shadow-xl hover:scale-105 transition duration-300" src="../assets/noahlong.jpeg" alt="" srcset="">
+                    <img class="w-8/12 rounded-2xl shadow-xl hover:scale-105 transition duration-300" src="../assets/noahlong.jpeg" alt="" srcset="">
                     <span class="">Trip to Savannah, GA in the Summer of 2021</span> 
                 </div>
                <div class="container flex flex-col items-center justify-start gap-3">
@@ -59,8 +59,35 @@
                     <h1 class="text-lg opacity-0" :class="{'opacity-100 transition duration-300':showUnion == true}">I Graduate in June, 2022</h1>
                 </div>
                 <div class="container flex flex-col items-center justify-start gap-3">
-                    <h1 class="text-4xl">My Values:</h1>
-                    <div class="grid grid-cols-1 bg-red-500 w-8/12 h-40 place-items-center text-3xl font-bold rounded-2xl shadow-xl text-white hover:scale-110 transition duration-300">Teamwork</div>
+                    <h1 class="text-4xl">Values:</h1>
+                    <div class="grid grid-cols-1 gap-4 bg-gradient-to-r from-cyan-500 to-blue-500 w-8/12 h-auto p-4 place-items-center text-3xl font-bold rounded-2xl shadow-xl text-white hover:scale-110 transition duration-300">
+                        <h1 class="text-2xl">Teamwork</h1>
+                        <div class="container flex flex-row justify-center gap-3">
+                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/baseballnoah.JPG" alt="">
+                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/noahfootball.JPG" alt="">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-4 bg-gradient-to-r from-sky-500 to-indigo-500 w-8/12 h-auto p-4 place-items-center text-3xl font-bold rounded-2xl shadow-xl text-white hover:scale-110 transition duration-300">
+                        <h1 class="text-2xl">Learning</h1>
+                        <div class="container flex flex-row justify-center gap-3">
+                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/atomic-habits.jpeg" alt="">
+                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/noahfootball.JPG" alt="">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-4 bg-gradient-to-r from-violet-500 to-fuchsia-500 w-8/12 h-auto p-4 place-items-center text-3xl font-bold rounded-2xl shadow-xl text-white hover:scale-110 transition duration-300">
+                        <h1 class="text-2xl">Problem Solving</h1>
+                        <div class="container flex flex-row justify-center gap-3">
+                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/baseballnoah.JPG" alt="">
+                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/noahfootball.JPG" alt="">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-4 bg-gradient-to-r from-purple-500 to-pink-500 w-8/12 h-auto p-4 place-items-center text-3xl font-bold rounded-2xl shadow-xl text-white hover:scale-110 transition duration-300">
+                        <h1 class="text-2xl">Creativity</h1>
+                        <div class="container flex flex-row justify-center gap-3">
+                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/baseballnoah.JPG" alt="">
+                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/noahfootball.JPG" alt="">
+                        </div>
+                    </div>
                 </div> 
             </div>
         </div>
