@@ -57,35 +57,49 @@
                     <h1 class="text-lg opacity-0" :class="{'opacity-100 transition duration-300':showUnion == true}">I attend Union College in Schenectady, NY</h1>
                     <img class="w-9/12 rounded-xl shadow-lg opacity-0 hover:scale-105 transition duration-300" :class="{'opacity-100 transition duration-300':showUnion == true}" src="../assets/union.jpeg" alt="" srcset="">
                     <h1 class="text-lg opacity-0" :class="{'opacity-100 transition duration-300':showUnion == true}">I Graduate in June, 2022</h1>
+                    {{showDenver}}
+                    {{showUnion}}
                 </div>
                 <div class="container flex flex-col items-center justify-start gap-3">
-                    <h1 class="text-4xl">Values:</h1>
-                    <div class="grid grid-cols-1 gap-4 bg-gradient-to-r from-cyan-500 to-blue-500 w-8/12 h-auto p-4 place-items-center text-3xl font-bold rounded-2xl shadow-xl text-white hover:scale-110 transition duration-300">
-                        <h1 class="text-2xl">Teamwork</h1>
+                    <h1 class="text-4xl">Values</h1>
+                    <div class="cursor-pointer grid grid-cols-1 gap-4 bg-gradient-to-r from-cyan-500 to-blue-500 w-8/12 h-auto p-4 place-items-center text-3xl font-bold rounded-2xl shadow-xl text-white hover:scale-110 transition duration-300" @click="showTeamworkModal = true">
+                        <div class="container flex flex-row justify-between items-center">
+                            <h1 class="text-2xl">Teamwork</h1>
+                            <svg class="w-6 h-6 -mt-4 hover:animate-pulse hover:scale-110 transition duration-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+                        </div>
                         <div class="container flex flex-row justify-center gap-3">
                             <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/baseballnoah.JPG" alt="">
                             <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/noahfootball.JPG" alt="">
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 gap-4 bg-gradient-to-r from-sky-500 to-indigo-500 w-8/12 h-auto p-4 place-items-center text-3xl font-bold rounded-2xl shadow-xl text-white hover:scale-110 transition duration-300">
-                        <h1 class="text-2xl">Learning</h1>
+                    <div class="cursor-pointer grid grid-cols-1 gap-4 bg-gradient-to-r from-sky-500 to-indigo-500 w-8/12 h-auto p-4 place-items-center text-3xl font-bold rounded-2xl shadow-xl text-white hover:scale-110 transition duration-300">
+                        <div class="container flex flex-row justify-between items-center">
+                            <h1 class="text-2xl">Learning</h1>
+                            <svg class="w-6 h-6 -mt-4 hover:animate-pulse hover:scale-110 transition duration-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+                        </div>
                         <div class="container flex flex-row justify-center gap-3">
                             <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/atomic-habits.jpeg" alt="">
-                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/noahfootball.JPG" alt="">
+                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/codecode.jpeg" alt="">
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 gap-4 bg-gradient-to-r from-violet-500 to-fuchsia-500 w-8/12 h-auto p-4 place-items-center text-3xl font-bold rounded-2xl shadow-xl text-white hover:scale-110 transition duration-300">
-                        <h1 class="text-2xl">Problem Solving</h1>
+                    <div class="cursor-pointer grid grid-cols-1 gap-4 bg-gradient-to-r from-violet-500 to-fuchsia-500 w-8/12 h-auto p-4 place-items-center text-3xl font-bold rounded-2xl shadow-xl text-white hover:scale-110 transition duration-300">
+                        <div class="container flex flex-row justify-between items-center">
+                            <h1 class="text-2xl">Problem Solving</h1>
+                            <svg class="w-6 h-6 -mt-4 hover:animate-pulse hover:scale-110 transition duration-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+                        </div>
                         <div class="container flex flex-row justify-center gap-3">
-                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/baseballnoah.JPG" alt="">
-                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/noahfootball.JPG" alt="">
+                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/puzzle.jpeg" alt="">
+                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/ps.jpeg" alt="">
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 gap-4 bg-gradient-to-r from-purple-500 to-pink-500 w-8/12 h-auto p-4 place-items-center text-3xl font-bold rounded-2xl shadow-xl text-white hover:scale-110 transition duration-300">
-                        <h1 class="text-2xl">Creativity</h1>
+                    <div class="cursor-pointer grid grid-cols-1 gap-4 bg-gradient-to-r from-purple-500 to-pink-500 w-8/12 h-auto p-4 place-items-center text-3xl font-bold rounded-2xl shadow-xl text-white hover:scale-110 transition duration-300">
+                        <div class="container flex flex-row justify-between items-center">
+                            <h1 class="text-2xl">Creativity</h1>
+                            <svg class="w-6 h-6 -mt-4 hover:animate-pulse hover:scale-110 transition duration-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+                        </div>
                         <div class="container flex flex-row justify-center gap-3">
-                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/baseballnoah.JPG" alt="">
-                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/noahfootball.JPG" alt="">
+                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/youngnoah.JPG" alt="">
+                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/creative.jpeg" alt="">
                         </div>
                     </div>
                 </div> 
@@ -103,6 +117,36 @@
         <h1>hey</h1>
     </div>
 </div>
+<!-- Teamwork Value Modal -->
+<Modal
+    v-model="showTeamworkModal"
+    :close="closeModal"
+    >
+        <div class="bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl w-10/12 sm:w-8/12 h-auto lg:h-screen">
+            <div class="container flex flex-col gap-5">
+                <svg class="w-8 h-8 mr-2 mt-1 self-end absolute hover:text-red-500 transition duration-300 cursor-pointer" @click="closeModal()" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <h1 class="sm:text-6xl text-3xl font-thin font-sans mx-auto text-white mt-5">Teamwork</h1>
+                <div class="grid md:grid-cols-2 grid-cols-1">
+                    <div class="container flex flex-col items-center gap-5">
+                        <img class="w-10/12 rounded-2xl border-2 border-white shadow-xl" src="../assets/baseballnoah.JPG" alt="">
+                        <img class="w-10/12 rounded-2xl border-2 border-white shadow-xl" src="../assets/noahfootball.JPG" alt="">
+                    </div>
+                    <div class="container flex flex-col items-center">
+                        <h1 class="text-white font-thin text-xl italic text-center mt-5 sm:mt-0 md:mr-10">"Teamwork is the only way to accomplish a task worth accomplishing".</h1>
+                        <span class="text-white font-thin text-base sm:mr-10">-me</span>
+
+                        <span class="text-left self-start mt-5 text-white mr-2 ml-2 sm:mr-10 sm:ml-0">Through my years of organized sports, I have truly learned the value of teamwork. Having acted as both a leader and a follower, I understand the actions required in order to accomplish the greater goal. For me, winning teams are united by a single cause. It is the job of the leader to promote that vision, and the job of the followers to help carry the mission to completion.</span>
+                        <span class="text-left self-start mt-5 text-white mr-2 ml-2 sm:mr-10 sm:ml-0"> My knowledge of teamwork and team-building helps me in all aspects of life. From group projects in college, to building friendships with classmates and coworkers. As a Computer Science major, I have quickly understood the great value of communication with others. Projects with little to no communication always end in disaster, whereas constant and effective communication most often results in success.  </span>
+                        <span class="text-left self-start mt-5 text-white mr-2 ml-2 sm:mr-10 sm:ml-0">Overall, the value of Teamwork and communication that I've learned from years of sports has been invaluable. I can both follow a leader with an important goal, and lead a team by uniting them under a single mission.</span>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+</Modal>
 </template>
 
 <script>
@@ -128,7 +172,7 @@ export default {
                 this.showUnion = false;
             }else{
                 this.scrollToElement(section);
-
+                console.log("This is working.")
                 // showTitle
                 setTimeout(()=>{this.showAboutSectionTitle = true}, 500);
                 // showDenver
@@ -157,6 +201,9 @@ export default {
             this.mobileHero = false;
             return;
         },
+        closeModal(){
+            this.showTeamworkModal = false;
+        },
     },
     data(){
         return {
@@ -172,6 +219,9 @@ export default {
             showAboutSectionTitle: false,
             showDenver: false,
             showUnion: false,
+
+            // About Section Modals
+            showTeamworkModal: false,
         }
     },
     mounted(){
