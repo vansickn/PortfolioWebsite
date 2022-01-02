@@ -8,7 +8,7 @@ import Card from './components/Card.vue';
 
 <template>
   <div class="w-screen"><Nav></Nav></div>
-  <router-view/>
+  <router-view></router-view>
   <!-- <HelloWorld msg="Hello Vue 3 + Vite" /> -->
   <!-- <div class="bg-red-500 text-white"> hey</div> -->
 </template>
