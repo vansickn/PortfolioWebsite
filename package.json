@@ -7,6 +7,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "firebase": "^9.6.1",
     "vue": "^3.2.25",
     "vue-responsive-video-background-player": "^2.2.0",
     "vue-router": "^4.0.12",
