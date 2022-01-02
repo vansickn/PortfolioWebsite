@@ -25,7 +25,8 @@
             <h1 class="mt-5 mb-5 font-bold text-5xl w-11/12 select-none">About Me</h1>
             <svg class="w-10 h-10 mr-3 transition duration-300" :class="{'rotate-180 transition duration-300':showAboutSection}" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
         </div>
-        <div class="container flex flex-col min-w-full transition duration-300 items-center justify-start gap-2 pt-5 pb-10" id="aboutSectionFull" :class="{'hidden':showAboutSection == false,'flex':showAboutSection == true}"> 
+        <div class="container flex flex-col min-w-full transition duration-300 items-center justify-start gap-2 pt-5 pb-10 min-h-screen" id="aboutSectionFull" :class="{'hidden':showAboutSection == false,'h-auto':showAboutSection == true}">
+            <h1 class="hidden" id="cometome"></h1> 
             <!-- START GRID -->
             <div class="grid grid-cols-1 lg:grid-cols-3 w-11/12 justify-items-center">
                 <!-- LEFT GRID -->
@@ -336,7 +337,7 @@ export default {
 
                     setTimeout(()=>{this.showContinueToProjects = true}, 4000);
                 }
-            },100)
+            },0)
         },
         scrollToElement(element){
             element.scrollIntoView({behavior:'smooth'});
