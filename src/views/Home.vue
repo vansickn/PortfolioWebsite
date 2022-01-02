@@ -126,7 +126,7 @@
             </div>
             <!-- END GRID -->
             <transition name="opacity">
-            <div class="container flex flex-row gap-3 mt-10 justify-center" v-show="showContinueToProjects == true">
+            <div class="container flex flex-row gap-3 lg:-mt-16 mt-5 justify-center hover:animate-pulse cursor-pointer" v-show="showContinueToProjects == true">
                 <h1 class="">continue to projects</h1>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
             </div>
@@ -134,8 +134,25 @@
         </div>
         <div id="bottom"></div>
     </div>
-    <div class="container flex flex-col justify-center min-w-full bg-green-500 bg-opacity-20 rounded-2xl shadow-xl" id="projectSection">
-        <h1 class="mt-5 mb-5 font-bold text-3xl">Projects</h1>
+    <!-- START PROJECTS SECTION -->
+    <div class="container flex flex-col justify-center h-auto min-w-full bg-gradient-to-r from-green-400 to-green-100 bg-opacity-20 rounded-2xl shadow-xl items-center" id="aboutSection">
+        <div class="container flex flex-row min-w-full justify-between items-center" @click="toggleProjectsSection">
+            <svg class="w-10 h-10 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path></svg>
+            <h1 class="mt-5 mb-5 font-bold text-5xl w-11/12 select-none">Projects</h1>
+            <svg class="w-10 h-10 mr-3 transition duration-300" :class="{'rotate-180 transition duration-300':showProjectsSection}" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </div>
+        <div class="container flex flex-col min-w-full transition duration-300 items-center justify-start gap-2 pt-5 pb-10 min-h-screen" id="projectSectionFull" :class="{'hidden':showProjectSection == false,'h-auto':showProjectSection == true}">
+            <h1 class="hidden" id="cometome"></h1> 
+            <!-- START GRID -->
+            <!-- END GRID -->
+            <transition name="opacity">
+            <div class="container flex flex-row gap-3 lg:-mt-16 mt-5 justify-center hover:animate-pulse cursor-pointer" v-show="showContinueToProjects == true">
+                <h1 class="">continue to projects</h1>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            </div>
+            </transition>
+        </div>
+        <div id="bottom"></div>
     </div>
     <div class="container flex flex-col justify-center min-w-full bg-blue-500 bg-opacity-20 rounded-2xl shadow-xl">
         <h1 class="mt-5 mb-5 font-bold text-3xl">Contact</h1>
