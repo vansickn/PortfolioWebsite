@@ -19,13 +19,13 @@
     <!-- END MAIN HERO -->
 
     <!-- START ABOUT ME SECTION -->
-    <div class="container flex flex-col justify-center min-w-full bg-gradient-to-r from-pink-100 to-pink-300 bg-opacity-20 rounded-2xl shadow-xl items-center" id="aboutSection">
+    <div class="container flex flex-col justify-center h-auto min-w-full bg-gradient-to-r from-pink-100 to-pink-300 bg-opacity-20 rounded-2xl shadow-xl items-center" id="aboutSection">
         <div class="container flex flex-row min-w-full justify-between items-center" @click="toggleAboutSection">
             <svg class="w-10 h-10 ml-3 transition duration-300" :class="{'rotate-360 transition duration-300':showAboutSection}" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
             <h1 class="mt-5 mb-5 font-bold text-5xl w-11/12 select-none">About Me</h1>
             <svg class="w-10 h-10 mr-3 transition duration-300" :class="{'rotate-180 transition duration-300':showAboutSection}" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
         </div>
-        <div class="container flex flex-col min-w-full h-auto transition duration-300 items-center justify-center gap-2 pt-5 pb-14" id="aboutSectionFull" :class="{'hidden':showAboutSection == false,'h-screen transition duration-300':showAboutSection == true}"> 
+        <div class="container flex flex-col min-w-full transition duration-300 items-center justify-start gap-2 pt-5 pb-10" id="aboutSectionFull" :class="{'hidden':showAboutSection == false,'flex':showAboutSection == true}"> 
             <!-- START GRID -->
             <div class="grid grid-cols-1 lg:grid-cols-3 w-11/12 justify-items-center">
                 <!-- LEFT GRID -->
@@ -78,7 +78,7 @@
                 </transition>
                 <!-- RIGHT GRID -->
                 <transition name="opacity">
-                <div class="container flex flex-col items-center justify-start gap-3 ml-5" v-show="showUnion">
+                <div class="container flex flex-col items-center justify-start gap-3 lg:ml-5" v-show="showUnion">
                     <h1 class="text-6xl lg:text-3xl">Values</h1>
                     <div class="cursor-pointer grid grid-cols-1 gap-4 bg-gradient-to-r from-cyan-500 to-blue-500 w-8/12 h-auto p-4 place-items-center text-3xl font-bold rounded-2xl shadow-xl text-white hover:scale-110 transition duration-300" @click="showTeamworkModal = true">
                         <div class="container flex flex-row justify-between items-center">
@@ -86,8 +86,8 @@
                             <svg class="w-6 h-6 -mt-4 hover:animate-pulse hover:scale-110 transition duration-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
                         </div>
                         <div class="container flex flex-row justify-center gap-3">
-                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/baseballnoah.JPG" alt="">
-                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/noahfootball.JPG" alt="">
+                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/baseballnoah.jpg" alt="">
+                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/noahfootball.jpg" alt="">
                         </div>
                     </div>
                     <div class="cursor-pointer grid grid-cols-1 gap-4 bg-gradient-to-r from-sky-500 to-indigo-500 w-8/12 h-auto p-4 place-items-center text-3xl font-bold rounded-2xl shadow-xl text-white hover:scale-110 transition duration-300" @click="showLearningModal = true">
@@ -116,7 +116,7 @@
                             <svg class="w-6 h-6 -mt-4 hover:animate-pulse hover:scale-110 transition duration-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
                         </div>
                         <div class="container flex flex-row justify-center gap-3">
-                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/youngnoah.JPG" alt="">
+                            <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/youngnoah.jpg" alt="">
                             <img class="w-5/12 border-2 border-white rounded-xl" src="../assets/creative.jpeg" alt="">
                         </div>
                     </div>
@@ -125,7 +125,7 @@
             </div>
             <!-- END GRID -->
             <transition name="opacity">
-            <div class="container flex flex-row -mt-14 gap-3 justify-center" v-show="showContinueToProjects == true">
+            <div class="container flex flex-row gap-3 mt-10 justify-center" v-show="showContinueToProjects == true">
                 <h1 class="">continue to projects</h1>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
             </div>
@@ -139,9 +139,7 @@
     <div class="container flex flex-col justify-center min-w-full bg-blue-500 bg-opacity-20 rounded-2xl shadow-xl">
         <h1 class="mt-5 mb-5 font-bold text-3xl">Contact</h1>
     </div>
-    <div class="h-screen bg-gray-500">
-        <h1>hey</h1>
-    </div>
+    
 </div>
 <!-- Teamwork Value Modal -->
 <Modal
@@ -154,8 +152,8 @@
                 <h1 class="sm:text-6xl text-3xl font-thin font-sans mx-auto text-white mt-5">Teamwork</h1>
                 <div class="grid md:grid-cols-2 grid-cols-1">
                     <div class="container flex flex-col items-center gap-5">
-                        <img class="w-10/12 rounded-2xl border-2 border-white shadow-xl" src="../assets/baseballnoah.JPG" alt="">
-                        <img class="w-10/12 rounded-2xl border-2 border-white shadow-xl" src="../assets/noahfootball.JPG" alt="">
+                        <img class="w-10/12 rounded-2xl border-2 border-white shadow-xl" src="../assets/baseballnoah.jpg" alt="">
+                        <img class="w-10/12 rounded-2xl border-2 border-white shadow-xl" src="../assets/noahfootball.jpg" alt="">
                     </div>
                     <div class="container flex flex-col items-center">
                         <h1 class="text-white font-thin text-xl italic text-center mt-5 sm:mt-0 md:mr-10">"Teamwork is the only way to accomplish a task worth accomplishing".</h1>
@@ -299,6 +297,12 @@
 </template>
 
 <script>
+//img loading
+import youngnoah from '../assets/youngnoah.jpg';
+import noahfootball from '../assets/noahfootball.jpg';
+import baseballnoah from '../assets/baseballnoah.jpg';
+
+
 import Card from '../components/Card.vue';
 import {ref} from 'vue';
 export default {
@@ -330,9 +334,9 @@ export default {
                     // showUnion
                     setTimeout(()=>{this.showUnion = true}, 2500);
 
-                    setTimeout(()=>{this.showContinueToProjects = true}, 3500);
+                    setTimeout(()=>{this.showContinueToProjects = true}, 4000);
                 }
-            },1)
+            },100)
         },
         scrollToElement(element){
             element.scrollIntoView({behavior:'smooth'});
