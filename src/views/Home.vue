@@ -147,7 +147,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 w-12/12 lg:w-11/12 justify-items-center gap-y-10">
                 <!-- START GRANICUS -->
                 <transition name="up-fade">
-                    <div class="container flex flex-col bg-gradient-to-r from-pink-200 to-orange-100 w-10/12 h-80 rounded-2xl shadow-2xl hover:scale-110 transition duration-300" v-show="showGranicus">
+                    <div class="container flex flex-col bg-gradient-to-r from-pink-200 to-orange-100 w-10/12 sm:h-80 pb-5  rounded-2xl shadow-2xl hover:scale-110 transition duration-300" v-show="showGranicus">
                         <div class="container flex flex-row mt-3 items-center w-full justify-between">
                             <div class="container flex flex-row justify-start items-start gap-2 sm:gap-5 ml-2">
                                 <img class="w-10 h-10 md:h-14 md:w-14" src="../assets/icon-granicus.png" alt="">
