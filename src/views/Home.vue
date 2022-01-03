@@ -126,7 +126,7 @@
             </div>
             <!-- END GRID -->
             <transition name="opacity">
-            <div class="container flex flex-row gap-3 lg:-mt-16 mt-5 justify-center hover:animate-pulse cursor-pointer" v-show="showContinueToProjects == true" @click="toggleProjectSection">
+            <div class="container flex flex-row gap-3 lg:-mt-16 mt-5 justify-center animate-bounce cursor-pointer" v-show="showContinueToProjects == true" @click="toggleProjectSection">
                 <h1 class="">continue to projects</h1>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
             </div>
