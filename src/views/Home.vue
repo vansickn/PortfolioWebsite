@@ -290,7 +290,7 @@
                             </div>
                         </div>
                         <ul class="list-disc w-10/12 mx-auto mt-2">
-                            <li class="text-left font-thin text-sm lg:text-base">Experiment to determine the role of Faces in YouTube videos</li>
+                            <li class="text-left font-thin text-sm lg:text-base">Experiment to determine the role of Faces in YouTube thumbnails</li>
                             <li class="text-left font-thin text-sm lg:text-base">Web Scaping and Face + Emotion Identification</li>
                         </ul>
                         <h1 class="text-base lg:text-xl font-bold mt-1 mb-1">Tech</h1>
