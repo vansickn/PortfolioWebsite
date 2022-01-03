@@ -196,7 +196,7 @@
                                 <img class="w-12 h-12 md:h-16 md:w-16 rounded-full border-red-400 border-2" src="../assets/chilecrunch.jpg" alt="">
                                 <div class="container flex flex-col items-start justify-start">
                                     <h1 class="text-base sm:text-xl text-left">Batch Tracking + Shipping</h1>
-                                    <span class="text-sm sm:text-base">Chile Colonial</span>
+                                    <span class="text-sm sm:text-base">Chile Colonial, Inc</span>
                                 </div>
                             </div>
                             <div class="container flex flex-row w-auto justify-start items-start -mt-8 mr-2">
@@ -204,7 +204,7 @@
                             </div>
                         </div>
                         <ul class="list-disc w-10/12 mx-auto mt-2">
-                            <li class="text-left font-thin text-sm lg:text-base">Designed, Build, and Maintained Ruby Web Application</li>
+                            <li class="text-left font-thin text-sm lg:text-base">Designed, Built, and Maintained Ruby Web Application</li>
                             <li class="text-left font-thin text-sm lg:text-base">Order shipments correlated with batch codes</li>
                             <li class="text-left font-thin text-sm lg:text-base">Easy to use Interface for CEO</li>
                         </ul>
@@ -233,41 +233,41 @@
                 <!-- END CHILECOLONIAL -->
                 <!-- START BETTERTHUMBNAILS -->
                 <transition name="up-fade">
-                    <div class="container flex flex-col bg-gradient-to-r from-pink-200 to-orange-100 w-10/12 h-80 rounded-2xl shadow-2xl hover:scale-110 transition duration-300" v-show="showBetterThumbnails">
+                    <div class="container flex flex-col bg-gradient-to-r from-red-700 to-red-900 w-10/12 sm:h-80 pb-5 rounded-2xl shadow-2xl hover:scale-110 transition duration-300" v-show="showBetterThumbnails">
                         <div class="container flex flex-row mt-3 items-center w-full justify-between">
                             <div class="container flex flex-row justify-start items-start gap-2 sm:gap-5 ml-2">
-                                <img class="w-10 h-10 md:h-14 md:w-14" src="../assets/icon-granicus.png" alt="">
-                                <div class="container flex flex-col items-start justify-start">
-                                    <h1 class="text-base sm:text-xl text-left">JIRA Reporting System</h1>
-                                    <span class="text-sm sm:text-base">Granicus, Inc</span>
+                                <svg class="w-16 h-10 md:h-14 md:w-20 rounded-xl text-red-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+                                <div class="container flex flex-col items-start justify-start text-white">
+                                    <h1 class="text-base sm:text-xl text-left">Founder</h1>
+                                    <span class="text-sm sm:text-base">BetterThumbnails LLC</span>
                                 </div>
                             </div>
                             <div class="container flex flex-row w-auto justify-start items-start -mt-8 mr-2">
-                                <svg class="w-5 h-5 md:w-8 md:h-8 hover:animate-pulse hover:scale-110 transition duration-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+                                <svg class=" text-white w-5 h-5 md:w-8 md:h-8 hover:animate-pulse hover:scale-110 transition duration-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
                             </div>
                         </div>
-                        <ul class="list-disc w-10/12 mx-auto mt-2">
-                            <li class="text-left font-thin text-sm lg:text-base">Built and Optimized JIRA reporting system</li>
-                            <li class="text-left font-thin text-sm lg:text-base">Designed for Maintainability and Scalability</li>
-                            <li class="text-left font-thin text-sm lg:text-base">Trained 3 other departments for use in other JIRA projects</li>
+                        <ul class="list-disc w-10/12 mx-auto mt-2 text-white">
+                            <li class="text-left font-thin text-sm lg:text-base">Building Web Application for YouTube Creators</li>
+                            <li class="text-left font-thin text-sm lg:text-base">A/B Testing for YouTube Thumbnails</li>
+                            <li class="text-left font-thin text-sm lg:text-base">Google Cloud Vision for object identification</li>
                         </ul>
-                        <h1 class="text-base lg:text-xl font-bold mt-1 mb-1">Tech</h1>
-                        <div class="grid grid-cols-4 w-9/12 self-center justify-items-center items-end">
+                        <h1 class="text-base lg:text-xl font-bold mt-1 mb-1 text-white">Tech</h1>
+                        <div class="grid grid-cols-4 w-9/12 self-center justify-items-center items-end text-white">
                             <div class="container flex flex-col justify-center items-center">
-                                <img class="w-10/12" src="../assets/python.png" alt="" srcset="">
-                                <span class="text-sm">python</span>
+                                <img class="w-10/12" src="../assets/vue.png" alt="" srcset="">
+                                <span class="text-xs sm:text-sm">vue</span>
                             </div>
                             <div class="container flex flex-col justify-center items-center">
-                                <svg class="w-10/12" preserveAspectRatio="xMidYMid" width="2500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 -30.632388516510233 255.324 285.95638851651023"><linearGradient id="a"><stop offset=".18" stop-color="#0052cc"/><stop offset="1" stop-color="#2684ff"/></linearGradient><linearGradient id="b" x1="98.031%" x2="58.888%" xlink:href="#a" y1=".161%" y2="40.766%"/><linearGradient id="c" x1="100.665%" x2="55.402%" xlink:href="#a" y1=".455%" y2="44.727%"/><path d="M244.658 0H121.707a55.502 55.502 0 0 0 55.502 55.502h22.649V77.37c.02 30.625 24.841 55.447 55.466 55.467V10.666C255.324 4.777 250.55 0 244.658 0z" fill="#2684ff"/><path d="M183.822 61.262H60.872c.019 30.625 24.84 55.447 55.466 55.467h22.649v21.938c.039 30.625 24.877 55.43 55.502 55.43V71.93c0-5.891-4.776-10.667-10.667-10.667z" fill="url(#b)"/><path d="M122.951 122.489H0c0 30.653 24.85 55.502 55.502 55.502h22.72v21.867c.02 30.597 24.798 55.408 55.396 55.466V133.156c0-5.891-4.776-10.667-10.667-10.667z" fill="url(#c)"/></svg>
-                                <span class="text-sm">JIRA</span>
+                                <img class="w-10/12 mb-1" src="../assets/firebase.png" alt="" srcset="">
+                                <span class="text-xs sm:text-sm">firebase</span>
                             </div>
                             <div class="container flex flex-col justify-center items-center">
-                                <img class="w-10/12" src="../assets/bash.png" alt="" srcset="">                            
-                                <span class="text-sm">Bash</span>
+                                <img class="w-10/12" src="../assets/node.png" alt="" srcset="">                            
+                                <span class="text-xs sm:text-sm">nodejs</span>
                             </div>
                             <div class="container flex flex-col justify-center items-center">
-                                <img class="w-10/12" src="../assets/excelicon.png" alt="" srcset="">
-                                <span class="text-sm">excel</span>
+                                <svg class="w-10/12 mb-3" preserveAspectRatio="xMidYMid" width="2500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 153.6"><linearGradient id="a" x1="-2.778%" y1="32%" y2="67.556%"><stop offset="0" stop-color="#2298bd"/><stop offset="1" stop-color="#0ed7b5"/></linearGradient><path d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0zM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8z" fill="url(#a)"/></svg>
+                                <span class="text-xs sm:text-sm">tailwind</span>
                             </div>
 
                         </div>
@@ -276,13 +276,13 @@
                 <!-- END BETTERTHUMBNAILS -->
                 <!-- START SENIORTHESIS -->
                 <transition name="up-fade">
-                    <div class="container flex flex-col bg-gradient-to-r from-pink-200 to-orange-100 w-10/12 h-80 rounded-2xl shadow-2xl hover:scale-110 transition duration-300" v-show="showSeniorThesis">
+                    <div class="container flex flex-col bg-gradient-to-r from-pink-500 to-pink-800 w-10/12 sm:h-80 pb-5 rounded-2xl shadow-2xl hover:scale-110 transition duration-300 text-white" v-show="showSeniorThesis">
                         <div class="container flex flex-row mt-3 items-center w-full justify-between">
                             <div class="container flex flex-row justify-start items-start gap-2 sm:gap-5 ml-2">
-                                <img class="w-10 h-10 md:h-14 md:w-14" src="../assets/icon-granicus.png" alt="">
+                                <img class="w-12 h-12 md:h-16 md:w-16 rounded-full" src="../assets/union.png" alt="">
                                 <div class="container flex flex-col items-start justify-start">
-                                    <h1 class="text-base sm:text-xl text-left">JIRA Reporting System</h1>
-                                    <span class="text-sm sm:text-base">Granicus, Inc</span>
+                                    <h1 class="text-base sm:text-xl text-left">Senior Capstone Project</h1>
+                                    <span class="text-sm sm:text-base">Union College</span>
                                 </div>
                             </div>
                             <div class="container flex flex-row w-auto justify-start items-start -mt-8 mr-2">
@@ -290,9 +290,8 @@
                             </div>
                         </div>
                         <ul class="list-disc w-10/12 mx-auto mt-2">
-                            <li class="text-left font-thin text-sm lg:text-base">Built and Optimized JIRA reporting system</li>
-                            <li class="text-left font-thin text-sm lg:text-base">Designed for Maintainability and Scalability</li>
-                            <li class="text-left font-thin text-sm lg:text-base">Trained 3 other departments for use in other JIRA projects</li>
+                            <li class="text-left font-thin text-sm lg:text-base">Experiment to determine the role of Faces in YouTube videos</li>
+                            <li class="text-left font-thin text-sm lg:text-base">Web Scaping and Face + Emotion Identification</li>
                         </ul>
                         <h1 class="text-base lg:text-xl font-bold mt-1 mb-1">Tech</h1>
                         <div class="grid grid-cols-4 w-9/12 self-center justify-items-center items-end">
@@ -301,25 +300,26 @@
                                 <span class="text-sm">python</span>
                             </div>
                             <div class="container flex flex-col justify-center items-center">
-                                <svg class="w-10/12" preserveAspectRatio="xMidYMid" width="2500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 -30.632388516510233 255.324 285.95638851651023"><linearGradient id="a"><stop offset=".18" stop-color="#0052cc"/><stop offset="1" stop-color="#2684ff"/></linearGradient><linearGradient id="b" x1="98.031%" x2="58.888%" xlink:href="#a" y1=".161%" y2="40.766%"/><linearGradient id="c" x1="100.665%" x2="55.402%" xlink:href="#a" y1=".455%" y2="44.727%"/><path d="M244.658 0H121.707a55.502 55.502 0 0 0 55.502 55.502h22.649V77.37c.02 30.625 24.841 55.447 55.466 55.467V10.666C255.324 4.777 250.55 0 244.658 0z" fill="#2684ff"/><path d="M183.822 61.262H60.872c.019 30.625 24.84 55.447 55.466 55.467h22.649v21.938c.039 30.625 24.877 55.43 55.502 55.43V71.93c0-5.891-4.776-10.667-10.667-10.667z" fill="url(#b)"/><path d="M122.951 122.489H0c0 30.653 24.85 55.502 55.502 55.502h22.72v21.867c.02 30.597 24.798 55.408 55.396 55.466V133.156c0-5.891-4.776-10.667-10.667-10.667z" fill="url(#c)"/></svg>
-                                <span class="text-sm">JIRA</span>
+                                <img class="w-12/12" src="../assets/gcloud.png" alt="" srcset="">                            
+                                <span class="text-sm">gcloud</span>
                             </div>
                             <div class="container flex flex-col justify-center items-center">
-                                <img class="w-10/12" src="../assets/bash.png" alt="" srcset="">                            
-                                <span class="text-sm">Bash</span>
+                                <img class="w-10/12" src="../assets/soup.png" alt="" srcset="">
+                                <span class="text-sm">bsoup</span>
                             </div>
                             <div class="container flex flex-col justify-center items-center">
-                                <img class="w-10/12" src="../assets/excelicon.png" alt="" srcset="">
-                                <span class="text-sm">excel</span>
+                                <img class="w-10/12" src="../assets/vue.png" alt="" srcset="">
+                                <span class="text-xs sm:text-sm">vue</span>
                             </div>
-
                         </div>
                     </div>
                 </transition>
                 <!-- END SENIORTHESIS -->
-                
             </div>
             <!-- END GRID -->
+            <div class="" v-show="showSeniorThesis">
+                <svg class=" cursor-pointer w-10 h-10 mt-5 md:-mt-10 animate-bounce" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            </div>
         </div>
         <div id="bottom"></div>
     </div>
