@@ -142,8 +142,34 @@
             <svg class="w-10 h-10 mr-3 transition duration-300" :class="{'rotate-180 transition duration-300':showProjectsSection}" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
         </div>
         <div class="container flex flex-col min-w-full transition duration-300 items-center justify-start gap-2 pt-5 pb-10 min-h-screen" id="projectSectionFull" :class="{'hidden':showProjectSection == false,'h-auto':showProjectSection == true}">
-            <h1 class="hidden" id="cometome"></h1> 
+            <h1 class="text-4xl font-thin mb-5">Here are a few projects I've worked on</h1>
             <!-- START GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-2 w-11/12 lg:w-10/12 justify-items-center gap-y-10">
+                <div class="container flex flex-col bg-gradient-to-r from-pink-200 to-orange-100 w-10/12 h-60 rounded-2xl shadow-2xl hover:scale-110 transition duration-300">
+                    <div class="container flex flex-row mt-3 items-center w-full justify-between">
+                        <div class="container flex flex-row justify-start items-start gap-5 ml-2">
+                            <img class="h-14 w-14" src="../assets/icon-granicus.png" alt="">
+                            <div class="container flex flex-col items-start justify-start">
+                                <h1 class="text-base sm:text-xl text-left">JIRA Reporting System</h1>
+                                <span class="text-sm sm:text-base">Granicus, Inc</span>
+                            </div>
+                        </div>
+                        <div class="container flex flex-row w-auto justify-start items-start -mt-8 mr-2">
+                            <svg class="w-8 h-8 hover:animate-pulse hover:scale-110 transition duration-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="container flex flex-col bg-gradient-to-t from-red-100 to-red-300 w-10/12 h-60 border-2 border-black rounded-2xl shadow-2xl">
+                    hello
+                </div>
+                <div class="container flex flex-col bg-gradient-to-t from-red-100 to-red-300 w-10/12 h-60 border-2 border-black rounded-2xl shadow-2xl">
+                    hello
+                </div>
+                <div class="container flex flex-col bg-gradient-to-t from-red-100 to-red-300 w-10/12 h-60 border-2 border-black rounded-2xl shadow-2xl">
+                    hello
+                </div>
+
+            </div>
             <!-- END GRID -->
         </div>
         <div id="bottom"></div>
