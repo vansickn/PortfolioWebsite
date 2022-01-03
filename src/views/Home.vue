@@ -38,7 +38,7 @@
                     </div>
                 </transition>
                 <!-- MIDDLE GRID -->
-                <transition name="down-fade">
+                <transition name="up-fade">
                 <div class="container flex flex-col items-center justify-start gap-5 lg:ml-5 mb-8" v-show="showDenver">
                         <!-- <br>
                         <h1 class="text-lg opacity-100" :class="{'opacity-100 transition duration-300':showDenver == true}" > I'm originally from Denver, Colorado</h1>
@@ -169,19 +169,19 @@
                         <div class="grid grid-cols-4 w-9/12 self-center justify-items-center items-end">
                             <div class="container flex flex-col justify-center items-center">
                                 <img class="w-10/12" src="../assets/python.png" alt="" srcset="">
-                                <span class="text-sm">python</span>
+                                <span class="text-xs sm:text-sm">python</span>
                             </div>
                             <div class="container flex flex-col justify-center items-center">
                                 <svg class="w-10/12" preserveAspectRatio="xMidYMid" width="2500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 -30.632388516510233 255.324 285.95638851651023"><linearGradient id="a"><stop offset=".18" stop-color="#0052cc"/><stop offset="1" stop-color="#2684ff"/></linearGradient><linearGradient id="b" x1="98.031%" x2="58.888%" xlink:href="#a" y1=".161%" y2="40.766%"/><linearGradient id="c" x1="100.665%" x2="55.402%" xlink:href="#a" y1=".455%" y2="44.727%"/><path d="M244.658 0H121.707a55.502 55.502 0 0 0 55.502 55.502h22.649V77.37c.02 30.625 24.841 55.447 55.466 55.467V10.666C255.324 4.777 250.55 0 244.658 0z" fill="#2684ff"/><path d="M183.822 61.262H60.872c.019 30.625 24.84 55.447 55.466 55.467h22.649v21.938c.039 30.625 24.877 55.43 55.502 55.43V71.93c0-5.891-4.776-10.667-10.667-10.667z" fill="url(#b)"/><path d="M122.951 122.489H0c0 30.653 24.85 55.502 55.502 55.502h22.72v21.867c.02 30.597 24.798 55.408 55.396 55.466V133.156c0-5.891-4.776-10.667-10.667-10.667z" fill="url(#c)"/></svg>
-                                <span class="text-sm">JIRA</span>
+                                <span class="text-xs sm:text-sm">JIRA</span>
                             </div>
                             <div class="container flex flex-col justify-center items-center">
                                 <img class="w-10/12" src="../assets/bash.png" alt="" srcset="">                            
-                                <span class="text-sm">bash</span>
+                                <span class="text-xs sm:text-sm">bash</span>
                             </div>
                             <div class="container flex flex-col justify-center items-center">
                                 <img class="w-10/12" src="../assets/excelicon.png" alt="" srcset="">
-                                <span class="text-sm">excel</span>
+                                <span class="text-xs sm:text-sm">excel</span>
                             </div>
 
                         </div>
@@ -190,13 +190,13 @@
                 <!-- END GRANICUS -->
                 <!-- START CHILECOLONIAL -->
                 <transition name="up-fade">
-                    <div class="container flex flex-col bg-gradient-to-r from-pink-200 to-orange-100 w-10/12 h-80 rounded-2xl shadow-2xl hover:scale-110 transition duration-300" v-show="showChileColonial">
+                    <div class="container flex flex-col bg-gradient-to-r from-red-100 to-red-300 w-10/12 sm:h-80 pb-5 rounded-2xl shadow-2xl hover:scale-110 transition duration-300" v-show="showChileColonial">
                         <div class="container flex flex-row mt-3 items-center w-full justify-between">
                             <div class="container flex flex-row justify-start items-start gap-2 sm:gap-5 ml-2">
-                                <img class="w-10 h-10 md:h-14 md:w-14" src="../assets/icon-granicus.png" alt="">
+                                <img class="w-12 h-12 md:h-16 md:w-16 rounded-full border-red-400 border-2" src="../assets/chilecrunch.jpg" alt="">
                                 <div class="container flex flex-col items-start justify-start">
-                                    <h1 class="text-base sm:text-xl text-left">JIRA Reporting System</h1>
-                                    <span class="text-sm sm:text-base">Granicus, Inc</span>
+                                    <h1 class="text-base sm:text-xl text-left">Batch Tracking + Shipping</h1>
+                                    <span class="text-sm sm:text-base">Chile Colonial</span>
                                 </div>
                             </div>
                             <div class="container flex flex-row w-auto justify-start items-start -mt-8 mr-2">
@@ -204,27 +204,27 @@
                             </div>
                         </div>
                         <ul class="list-disc w-10/12 mx-auto mt-2">
-                            <li class="text-left font-thin text-sm lg:text-base">Built and Optimized JIRA reporting system</li>
-                            <li class="text-left font-thin text-sm lg:text-base">Designed for Maintainability and Scalability</li>
-                            <li class="text-left font-thin text-sm lg:text-base">Trained 3 other departments for use in other JIRA projects</li>
+                            <li class="text-left font-thin text-sm lg:text-base">Designed, Build, and Maintained Ruby Web Application</li>
+                            <li class="text-left font-thin text-sm lg:text-base">Order shipments correlated with batch codes</li>
+                            <li class="text-left font-thin text-sm lg:text-base">Easy to use Interface for CEO</li>
                         </ul>
                         <h1 class="text-base lg:text-xl font-bold mt-1 mb-1">Tech</h1>
                         <div class="grid grid-cols-4 w-9/12 self-center justify-items-center items-end">
                             <div class="container flex flex-col justify-center items-center">
-                                <img class="w-10/12" src="../assets/python.png" alt="" srcset="">
-                                <span class="text-sm">python</span>
+                                <img class="w-10/12" src="../assets/ruby.png" alt="" srcset="">
+                                <span class="text-xs sm:text-sm">ruby</span>
                             </div>
                             <div class="container flex flex-col justify-center items-center">
-                                <svg class="w-10/12" preserveAspectRatio="xMidYMid" width="2500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 -30.632388516510233 255.324 285.95638851651023"><linearGradient id="a"><stop offset=".18" stop-color="#0052cc"/><stop offset="1" stop-color="#2684ff"/></linearGradient><linearGradient id="b" x1="98.031%" x2="58.888%" xlink:href="#a" y1=".161%" y2="40.766%"/><linearGradient id="c" x1="100.665%" x2="55.402%" xlink:href="#a" y1=".455%" y2="44.727%"/><path d="M244.658 0H121.707a55.502 55.502 0 0 0 55.502 55.502h22.649V77.37c.02 30.625 24.841 55.447 55.466 55.467V10.666C255.324 4.777 250.55 0 244.658 0z" fill="#2684ff"/><path d="M183.822 61.262H60.872c.019 30.625 24.84 55.447 55.466 55.467h22.649v21.938c.039 30.625 24.877 55.43 55.502 55.43V71.93c0-5.891-4.776-10.667-10.667-10.667z" fill="url(#b)"/><path d="M122.951 122.489H0c0 30.653 24.85 55.502 55.502 55.502h22.72v21.867c.02 30.597 24.798 55.408 55.396 55.466V133.156c0-5.891-4.776-10.667-10.667-10.667z" fill="url(#c)"/></svg>
-                                <span class="text-sm">JIRA</span>
+                                <img class="w-10/12" src="../assets/postgres.png" alt="" srcset="">
+                                <span class="text-xs sm:text-sm">postgreSQL</span>
                             </div>
                             <div class="container flex flex-col justify-center items-center">
-                                <img class="w-10/12" src="../assets/bash.png" alt="" srcset="">                            
-                                <span class="text-sm">Bash</span>
+                                <svg class="w-10/12 mb-3" preserveAspectRatio="xMidYMid" width="2500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 153.6"><linearGradient id="a" x1="-2.778%" y1="32%" y2="67.556%"><stop offset="0" stop-color="#2298bd"/><stop offset="1" stop-color="#0ed7b5"/></linearGradient><path d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0zM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8z" fill="url(#a)"/></svg>
+                                <span class="text-xs sm:text-sm">tailwind</span>
                             </div>
                             <div class="container flex flex-col justify-center items-center">
-                                <img class="w-10/12" src="../assets/excelicon.png" alt="" srcset="">
-                                <span class="text-sm">excel</span>
+                                <img class="w-10/12" src="../assets/html.png" alt="" srcset="">
+                                <span class="text-xs sm:text-sm">html5</span>
                             </div>
 
                         </div>
@@ -499,12 +499,6 @@ import {ref} from 'vue';
 export default {
     components: { Card },
     methods: {
-        sendToGithub(){
-            window.open('https://github.com/vansickn');
-        },
-        sendToLinkedin(){
-            window.open('https://www.linkedin.com/in/noah-vansickle-b68131191/');
-        },
         toggleAboutSection(){
             this.showAboutSection = !this.showAboutSection;
             setTimeout(()=>{
