@@ -42,6 +42,12 @@ export default {
             this.mobileNav = false;
             return;
         },
+        sendToGithub(){
+            window.open('https://github.com/vansickn');
+        },
+        sendToLinkedin(){
+            window.open('https://www.linkedin.com/in/noah-vansickle-b68131191/');
+        },
     },
     data(){
         return{
