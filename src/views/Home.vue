@@ -177,7 +177,7 @@
                             </div>
                             <div class="container flex flex-col justify-center items-center">
                                 <img class="w-10/12" src="../assets/bash.png" alt="" srcset="">                            
-                                <span class="text-sm">Bash</span>
+                                <span class="text-sm">bash</span>
                             </div>
                             <div class="container flex flex-col justify-center items-center">
                                 <img class="w-10/12" src="../assets/excelicon.png" alt="" srcset="">
@@ -537,6 +537,10 @@ export default {
                 let section = document.querySelector('#projectSectionFull');
                 if(this.showProjectSection == false){
                     this.scrollToTop();
+                    this.showGranicus = false;
+                    this.showChileColonial = false;
+                    this.showBetterThumbnails = false;
+                    this.showSeniorThesis= false;
                 }else{
                     this.scrollToElement(section);
                     setTimeout(()=>{this.showGranicus = true}, 500);
