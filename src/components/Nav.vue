@@ -12,7 +12,11 @@
         </div>
     </div>
     <transition name="slide-fade">
-       <ul class="container bg-gray-200 w-9/12 h-full absolute flex flex-col bg-opacity-90 z-30 rounded-r-xl" v-show="mobileNav">
+       <div class="container bg-gray-200 w-9/12 h-full absolute flex flex-col bg-opacity-90 z-30 rounded-r-xl items-center gap-5 pt-5" v-show="mobileNav">
+                <img src="../assets/github.png" alt="" srcset="" class="w-14 h-14 mt-1 rounded-full shadow-xl hover:scale-110 transition duration-300 hover;brightness-110" @click="sendToGithub">
+                <img src="../assets/linkedin.png" alt="" srcset="" class="w-14 h-14 mt-1 rounded-sm shadow-xl hover:scale-110 transition duration-300 hover:brightness-110" @click="sendToLinkedin">
+                <router-link @click="mobileNav = false" to="/" class="text-2xl hover:text-white hover:bg-blue-500 transition duration-300 bg-gray-200 rounded-lg p-2 px-6 shadow-md">Contact</router-link>
+                <router-link @click="mobileNav = false" to="/designs" class="px-6 text-2xl hover:bg-gradient-to-t hover:text-white hover:from-indigo-500 hover:to-purple-300 hover:transition hover:duration-300 transition duration-300 bg-gray-200 rounded-lg p-2 shadow-md" active-class="bg-gradient-to-t from-indigo-500 to-purple-300 text-white">Designs</router-link>
                 <!-- <router-link @click="toggleMobileNav" v-if="loggedIn" class = "container w-2/3 flex justify-around items-center mt-2 p-3 hover:bg-red-500 rounded-lg transition duration-500 ease-in-out transform" to="/account">
                     <img :src="userData.photo" alt="" srcset="" class="rounded-full w-12 h-12 border-2">
                     <Coin v-if="user.data != null" :coins="coins" @change="listenForCoins" class="w-12 h-12"/>
@@ -20,7 +24,7 @@
                 <router-link @click="toggleMobileNav" class = "container mb-2 mt-2 w-2/3 flex justify-center items-center p-3 bg-white opacity-100 hover:bg-red-500 hover:text-white rounded-lg transition duration-500 ease-in-out transform" active-class="bg-red-500 text-white" to="/" >About</router-link> 
                 <router-link @click="toggleMobileNav" class = "container mb-2 w-2/3 flex justify-center items-center p-3 bg-white hover:bg-green-500 hover:text-white rounded-lg transition duration-500 ease-in-out transform" to="#" >Projects</router-link> -->
                 
-        </ul>
+        </div>
     </transition>
 </template>
 
