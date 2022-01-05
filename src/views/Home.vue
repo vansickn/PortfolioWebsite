@@ -147,7 +147,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 w-12/12 lg:w-11/12 justify-items-center gap-y-10">
                 <!-- START BETTERTHUMBNAILS -->
                 <transition name="up-fade">
-                    <div class="container flex flex-col bg-gradient-to-r from-red-700 to-red-900 w-10/12 sm:h-80 pb-5 rounded-2xl shadow-2xl hover:scale-110 transition duration-300" v-show="showBetterThumbnails">
+                    <div class="container flex flex-col bg-gradient-to-r from-red-700 to-red-900 w-10/12 sm:h-80 pb-5 rounded-2xl shadow-2xl hover:scale-110 transition duration-300" v-show="showBetterThumbnails" @click="showBetterThumbnailsModal = true">
                         <div class="container flex flex-row mt-3 items-center w-full justify-between">
                             <div class="container flex flex-row justify-start items-start gap-2 sm:gap-5 ml-2">
                                 <svg class="w-16 h-10 md:h-14 md:w-20 rounded-xl text-red-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
@@ -487,6 +487,64 @@
 <!-- VALUES MODALS END -->
 
 <!-- PROJECT MODALS START -->
+<!-- Creativity Modal -->
+<Modal
+    v-model="showBetterThumbnailsModal"
+    :close="closeModal"
+    >
+        <div class="bg-gradient-to-r from-red-700 to-red-900 rounded-xl w-10/12 sm:w-8/12 h-auto pb-5">
+            <div class="container flex flex-col gap-5">
+                <svg class="w-8 h-8 mr-2 mt-1 self-end absolute hover:text-red-500 transition duration-300 cursor-pointer" @click="closeModal()" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <h1 class="sm:text-6xl text-3xl font-thin font-sans mx-auto text-white mt-5 text-center"> BetterThumbnails LLC</h1>
+                <div class="container flex flex-col">
+                    <div class="grid grid-cols-1 md:grid-cols-2 w-11/12 justify-items-center mx-auto">
+                        <div class="container flex flex-col">
+                            <img class="rounded-2xl md:w-9/12 mx-auto shadow-2xl hover:scale-125 transition duration-300" src="../assets/bt2.png" alt="">
+                            <span class="text-sm text-white font-thin mb-5 text-center mt-1">Screenshot of the home page of BetterThumbnails.com</span>
+                        </div>
+                        <div class="container flex flex-col justify-start items-center w-10/12 mx-auto gap-3">
+                            <h1 class="text-white text-left self-start text-2xl lg:text-3xl font-light">I founded BetterThumbnails LLC in November, 2021 to help YouTube Creators understand more about their thumbnails.</h1>
+                            <span class="text-base lg:text-lg text-white font-light text-left self-start">The objective of the company is to deliver the best data-centric approach to designing and testing YouTube thumbnails. </span>
+                        </div>
+                    </div>
+                    <h1 class="text-5xl text-white self-center font-light text-center mb-5 mt-5">Main Functionality</h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 w-11/12 justify-items-center mx-auto">
+                        <div class="container flex flex-col justify-start items-center w-10/12 mx-auto gap-3">
+                            <h1 class="text-white text-left self-start text-2xl lg:text-3xl font-light"> Using Data to find the perfect Thumbnail for a creator's video.</h1>
+                            <span class="text-sm lg:text-lg text-white font-light text-left self-start mb-5">At it's core, BetterThumbnails.com is a community polling website. Users can create tests and vote on others in order to hone their thumbnail designs.</span>
+                            <span class="text-sm lg:text-lg text-white font-light text-left self-start mb-5"> In the "My Tests" page, the changing votes are shown live to the user, to see people's opinions in real time. </span>
+
+                        </div>
+                        <div class="container flex flex-col">
+                            <img class="rounded-2xl w-12/12 mx-auto shadow-2xl hover:scale-125 transition duration-300" src="../assets/bt3.png" alt="">
+                            <span class="text-sm text-white font-thin mb-5 text-center">Screenshot of "My Tests" page</span>
+                            <img class="rounded-2xl w-12/12 mx-auto shadow-2xl hover:scale-125 transition duration-300" src="../assets/btcreatetest.png" alt="">
+                            <span class="text-sm text-white font-thin mb-5 text-center">Screenshot of "Create Test" page</span>
+                            <!-- <span class="text-lg font-light text-white">The photo above shows the "My Tests" portion of the website, in which the user can spectate </span> -->
+                        </div>
+                    </div>
+                    <h1 class="text-5xl text-white self-center font-light text-center mb-5 mt-5">Coins + Sample Sizes</h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 w-11/12 justify-items-center mx-auto">
+                        <div class="container flex flex-col justify-start items-center w-10/12 mx-auto gap-3">
+                            <h1 class="text-white text-left self-start text-2xl lg:text-3xl font-light"> I needed a way to incentivize users voting on other tests.</h1>
+                            <span class="text-sm lg:text-lg text-white font-light text-left self-start mb-5"></span>
+                            <span class="text-sm lg:text-lg text-white font-light text-left self-start mb-5"></span>
+
+                        </div>
+                        <div class="container flex flex-col">
+                            <img class="rounded-2xl w-12/12 mx-auto shadow-2xl hover:scale-125 transition duration-300" src="../assets/bt3.png" alt="">
+                            <span class="text-sm text-white font-thin mb-5 text-center">Screenshot of "My Tests" page</span>
+                            <img class="rounded-2xl w-12/12 mx-auto shadow-2xl hover:scale-125 transition duration-300" src="../assets/btcreatetest.png" alt="">
+                            <span class="text-sm text-white font-thin mb-5 text-center">Screenshot of "Create Test" page</span>
+                            <!-- <span class="text-lg font-light text-white">The photo above shows the "My Tests" portion of the website, in which the user can spectate </span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+</Modal>
 <!-- PROJECT MODALS END -->
 </template>
 
@@ -565,10 +623,18 @@ export default {
             return;
         },
         closeModal(){
+            // values
             this.showTeamworkModal = false;
             this.showLearningModal = false;
             this.showProblemSolvingModal = false;
             this.showCreativityModal = false;
+            
+            // projects
+            this.showBetterThumbnailsModal = false;
+            this.showSeniorThesisModal = false;
+            this.showGranicusModal = false;
+            this.showChileColonialModal = false;
+
         },
     },
     data(){
@@ -598,6 +664,12 @@ export default {
             showChileColonial: false,
             showBetterThumbnails: false,
             showSeniorThesis: false,
+
+            // Project Section Modals
+            showBetterThumbnailsModal: false,
+            showSeniorThesisModal: false,
+            showGranicusModal: false,
+            showChileColonialModal: false,
         }
     },
     mounted(){
