@@ -1,11 +1,12 @@
 <template>
-    <div class="bg-gray-100 h-16 rounded-xl shadow-lg">
-        <div class="container flex flex-row min-w-full h-16 items-center justify-between">
+    <div class="bg-gray-100 h-16 rounded-xl shadow-lg min-w-full max-w-full">
+        <div class="container flex flex-row min-w-full max-w-full h-16 items-center justify-between">
             <a href="/" class="text-xl sm:text-3xl sm:ml-4 ml-2">Noah's Portfolio</a>
-            <div class="container flex flex-row justify-end mr-4 gap-4 w-3/12" v-show="!mobile">
+            <div class="container flex flex-row justify-end mr-4 gap-4 w-4/12" v-show="!mobile">
                 <img src="../assets/github.png" alt="" srcset="" class="w-10 h-10 mt-1 rounded-full shadow-xl hover:scale-110 transition duration-300 hover;brightness-110" @click="sendToGithub">
                 <img src="../assets/linkedin.png" alt="" srcset="" class="w-10 h-10 mt-1 rounded-sm shadow-xl hover:scale-110 transition duration-300 hover:brightness-110" @click="sendToLinkedin">
-                <button class="sm:text-xl hover:text-white hover:bg-blue-500 transition duration-300 bg-gray-200 rounded-lg p-2 shadow-md" active-class="bg-blue-400 text-white">Contact</button>
+                <button class="sm:text-xl hover:text-white hover:bg-blue-500 transition duration-300 bg-gray-200 rounded-lg p-2 shadow-md">Contact</button>
+                <router-link to="/designs" class="sm:text-xl hover:bg-gradient-to-t hover:text-white hover:from-indigo-500 hover:to-purple-300 hover:transition hover:duration-300 transition duration-300 bg-gray-200 rounded-lg p-2 shadow-md" active-class="bg-gradient-to-t from-indigo-500 to-purple-300 text-white">Designs</router-link>
             </div>
              <svg class="w-6 h-6 mr-4 focus:none" @click="mobileNav = !mobileNav" id='menu-icon' v-show="mobile" aria-hidden="true" focusable="false" data-prefix="far" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg>
         </div>
