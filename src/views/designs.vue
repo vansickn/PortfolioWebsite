@@ -1,5 +1,5 @@
 <template>
-  <div class="min-w-full min-h-screen bg-gradient-to-t from-indigo-500 to-purple-300 rounded-xl m-0 p-0" id="designsdiv">
+  <div class="min-w-full min-h-screen bg-gradient-to-t from-indigo-500 to-purple-300 m-0 p-0" id="designsdiv">
       <h1 class="text-5xl sm:text-7xl text-white font-thin pt-20 mb-2">Welcome to My Designs</h1>
       <h1 class="text-white font-thin text-xs sm:text-base">*this is a page for the AVA-282 Digital Aesthetics Class</h1>
       <div class="container flex flex-col w-11/12 sm:w-8/12 justify-center items-center mx-auto mt-5">
