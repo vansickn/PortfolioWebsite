@@ -10,7 +10,8 @@ const router = createRouter({
             path: '/designs',
             component: () => import('../views/designs.vue')
         },
-    ]
+    ],
+    mode: 'history',
 })
 
 export default router
