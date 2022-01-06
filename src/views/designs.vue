@@ -37,16 +37,16 @@
                     <h1 class="sm:text-4xl lg:text-6xl text-2xl font-light font-sans text-white mt-5 text-left"> 10 Bad Designs</h1>
                 </div>
                 <div class="grid md:grid-cols-4 lg:grid-cols-5 justify-items-center p-5 gap-5 items-end">
-                    <img class="rounded-xl shadow-2xl hover:scale-100 md:hover:scale-125 transition duration-300" src="../assets/rockies.jpeg" alt="">
-                    <img class="rounded-xl shadow-2xl hover:scale-100 md:hover:scale-125 transition duration-300" src="../assets/webadvising.jpg" alt="">
-                    <img class="w-9/12 rounded-xl shadow-2xl hover:scale-100 md:hover:scale-125 transition duration-300" src="../assets/londonolympics.jpeg" alt="">
-                    <img class="rounded-xl shadow-2xl hover:scale-100 md:hover:scale-125 transition duration-300" src="../assets/oldmicrosoft.png" alt="">
-                    <img class="rounded-xl shadow-2xl hover:scale-100 md:hover:scale-125 transition duration-300" src="../assets/broncos.png" alt="">
-                    <img class="self-start rounded-xl shadow-2xl hover:scale-100 md:hover:scale-125 transition duration-300" src="../assets/targetdog.jpeg" alt="">
-                    <img class="self-start rounded-xl shadow-2xl hover:scale-100 md:hover:scale-125 transition duration-300" src="../assets/coors.jpeg" alt="">
-                    <img class="self-start rounded-xl shadow-2xl hover:scale-100 md:hover:scale-125 transition duration-300" src="../assets/nationals.png" alt="">
-                    <img class="rounded-xl shadow-2xl hover:scale-100 md:hover:scale-125 transition duration-300" src="../assets/schenectadyschools.png" alt="">
-                    <img class="self-start rounded-xl shadow-2xl hover:scale-100 md:hover:scale-125 transition duration-300" src="../assets/blueorigin.jpeg" alt="">
+                    <img class="rounded-xl shadow-2xl hover:scale-100 md:hover:scale-150 transition duration-300" src="../assets/rockies.jpeg" alt="">
+                    <img class="rounded-xl shadow-2xl hover:scale-100 md:hover:scale-150 transition duration-300" src="../assets/webadvising.jpg" alt="">
+                    <img class="w-9/12 rounded-xl shadow-2xl hover:scale-100 md:hover:scale-150 transition duration-300" src="../assets/londonolympics.jpeg" alt="">
+                    <img class="rounded-xl shadow-2xl hover:scale-100 md:hover:scale-150 transition duration-300" src="../assets/jump.jpeg" alt="">
+                    <img class="rounded-xl shadow-2xl hover:scale-100 md:hover:scale-150 transition duration-300" src="../assets/car.jpeg" alt="">
+                    <img class="self-start rounded-xl shadow-2xl hover:scale-100 md:hover:scale-150 transition duration-300" src="../assets/poster.jpeg" alt="">
+                    <img class="self-start rounded-xl shadow-2xl hover:scale-100 md:hover:scale-150 transition duration-300" src="../assets/hoes.jpeg" alt="">
+                    <img class="self-start rounded-xl shadow-2xl hover:scale-100 md:hover:scale-150 transition duration-300" src="../assets/feethot.png" alt="">
+                    <img class="rounded-xl shadow-2xl hover:scale-100 md:hover:scale-150 transition duration-300" src="../assets/schenectadyschools.png" alt="">
+                    <img class="self-start rounded-xl shadow-2xl hover:scale-100 md:hover:scale-150 transition duration-300" src="../assets/blueorigin.jpeg" alt="">
                     
                 </div>
                 <h1 class="text-white mx-auto font-light">*A few examples of what I consider bad design. </h1>
