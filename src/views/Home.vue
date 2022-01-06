@@ -147,7 +147,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 w-12/12 lg:w-11/12 justify-items-center gap-y-10">
                 <!-- START BETTERTHUMBNAILS -->
                 <transition name="up-fade">
-                    <div class="container flex flex-col bg-gradient-to-r from-red-700 to-red-900 w-10/12 sm:h-80 pb-5 rounded-2xl shadow-2xl hover:scale-110 transition duration-300" v-show="showBetterThumbnails" @click="showBetterThumbnailsModal = true">
+                    <div class="container flex flex-col bg-gradient-to-r from-red-700 to-red-900 w-10/12 pb-5 rounded-2xl shadow-2xl hover:scale-110 transition duration-300" v-show="showBetterThumbnails" @click="showBetterThumbnailsModal = true">
                         <div class="container flex flex-row mt-3 items-center w-full justify-between">
                             <div class="container flex flex-row justify-start items-start gap-2 sm:gap-5 ml-2">
                                 <svg class="w-16 h-10 md:h-14 md:w-20 rounded-xl text-red-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
@@ -190,7 +190,7 @@
                 <!-- END BETTERTHUMBNAILS -->
                 <!-- START SENIORTHESIS -->
                 <transition name="up-fade">
-                    <div class="container flex flex-col bg-gradient-to-r from-pink-500 to-pink-800 w-10/12 sm:h-80 pb-5 rounded-2xl shadow-2xl hover:scale-110 transition duration-300 text-white" v-show="showSeniorThesis">
+                    <div class="container flex flex-col bg-gradient-to-r from-pink-500 to-pink-800 w-10/12 pb-5 rounded-2xl shadow-2xl hover:scale-110 transition duration-300 text-white" v-show="showSeniorThesis">
                         <div class="container flex flex-row mt-3 items-center w-full justify-between">
                             <div class="container flex flex-row justify-start items-start gap-2 sm:gap-5 ml-2">
                                 <img class="w-12 h-12 md:h-16 md:w-16 rounded-full" src="../assets/union.png" alt="">
@@ -231,7 +231,7 @@
                 <!-- END SENIORTHESIS -->
                 <!-- START GRANICUS -->
                 <transition name="up-fade">
-                    <div class="container flex flex-col bg-gradient-to-r from-pink-200 to-orange-100 w-10/12 sm:h-80 pb-5  rounded-2xl shadow-2xl hover:scale-110 transition duration-300" v-show="showGranicus">
+                    <div class="container flex flex-col bg-gradient-to-r from-pink-200 to-orange-100 w-10/12 pb-5  rounded-2xl shadow-2xl hover:scale-110 transition duration-300" v-show="showGranicus">
                         <div class="container flex flex-row mt-3 items-center w-full justify-between">
                             <div class="container flex flex-row justify-start items-start gap-2 sm:gap-5 ml-2">
                                 <img class="w-10 h-10 md:h-14 md:w-14" src="../assets/icon-granicus.png" alt="">
@@ -274,7 +274,7 @@
                 <!-- END GRANICUS -->
                 <!-- START CHILECOLONIAL -->
                 <transition name="up-fade">
-                    <div class="container flex flex-col bg-gradient-to-r from-red-100 to-red-300 w-10/12 sm:h-80 pb-5 rounded-2xl shadow-2xl hover:scale-110 transition duration-300" v-show="showChileColonial">
+                    <div class="container flex flex-col bg-gradient-to-r from-red-100 to-red-300 w-10/12 pb-5 rounded-2xl shadow-2xl hover:scale-110 transition duration-300" v-show="showChileColonial">
                         <div class="container flex flex-row mt-3 items-center w-full justify-between">
                             <div class="container flex flex-row justify-start items-start gap-2 sm:gap-5 ml-2">
                                 <img class="w-12 h-12 md:h-16 md:w-16 rounded-full border-red-400 border-2" src="../assets/chilecrunch.jpg" alt="">
