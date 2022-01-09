@@ -147,7 +147,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 w-12/12 lg:w-11/12 justify-items-center gap-y-10">
                 <!-- START BETTERTHUMBNAILS -->
                 <transition name="up-fade">
-                    <div class="container flex flex-col bg-gradient-to-r from-red-700 to-red-900 w-10/12 pb-5 rounded-2xl shadow-2xl hover:scale-110 transition duration-300" v-show="showBetterThumbnails" @click="showBetterThumbnailsModal = true">
+                    <div class="container flex flex-col bg-gradient-to-r from-red-700 to-red-900 w-10/12 pb-5 rounded-2xl shadow-2xl hover:scale-110 transition duration-300 cursor-pointer" v-show="showBetterThumbnails" @click="showBetterThumbnailsModal = true">
                         <div class="container flex flex-row mt-3 items-center w-full justify-between">
                             <div class="container flex flex-row justify-start items-start gap-2 sm:gap-5 ml-2">
                                 <svg class="w-16 h-10 md:h-14 md:w-20 rounded-xl text-red-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
@@ -190,7 +190,7 @@
                 <!-- END BETTERTHUMBNAILS -->
                 <!-- START SENIORTHESIS -->
                 <transition name="up-fade">
-                    <div class="container flex flex-col bg-gradient-to-r from-pink-500 to-pink-800 w-10/12 pb-5 rounded-2xl shadow-2xl hover:scale-110 transition duration-300 text-white" v-show="showSeniorThesis">
+                    <div class="container flex flex-col bg-gradient-to-r from-pink-500 to-pink-800 w-10/12 pb-5 rounded-2xl shadow-2xl hover:scale-110 transition duration-300 text-white cursor-pointer" v-show="showSeniorThesis" @click="showSeniorThesisModal = true">
                         <div class="container flex flex-row mt-3 items-center w-full justify-between">
                             <div class="container flex flex-row justify-start items-start gap-2 sm:gap-5 ml-2">
                                 <img class="w-12 h-12 md:h-16 md:w-16 rounded-full" src="../assets/union.png" alt="">
@@ -487,7 +487,7 @@
 <!-- VALUES MODALS END -->
 
 <!-- PROJECT MODALS START -->
-<!-- Creativity Modal -->
+<!-- Better Thumbnails Modal -->
 <Modal
     v-model="showBetterThumbnailsModal"
     :close="closeModal"
@@ -518,27 +518,52 @@
                         <div class="container flex flex-col">
                             <img class="rounded-2xl w-12/12 mx-auto shadow-2xl hover:scale-125 transition duration-300" src="../assets/bt3.png" alt="">
                             <span class="text-sm text-white font-thin mb-5 text-center">Screenshot of "My Tests" page</span>
-                            <img class="rounded-2xl w-12/12 mx-auto shadow-2xl hover:scale-125 transition duration-300" src="../assets/btcreatetest.png" alt="">
-                            <span class="text-sm text-white font-thin mb-5 text-center">Screenshot of "Create Test" page</span>
                             <!-- <span class="text-lg font-light text-white">The photo above shows the "My Tests" portion of the website, in which the user can spectate </span> -->
                         </div>
                     </div>
                     <h1 class="text-5xl text-white self-center font-light text-center mb-5 mt-5">Coins + Sample Sizes</h1>
                     <div class="grid grid-cols-1 md:grid-cols-2 w-11/12 justify-items-center mx-auto">
-                        <div class="container flex flex-col justify-start items-center w-10/12 mx-auto gap-3">
-                            <h1 class="text-white text-left self-start text-2xl lg:text-3xl font-light"> I needed a way to incentivize users voting on other tests.</h1>
-                            <span class="text-sm lg:text-lg text-white font-light text-left self-start mb-5"></span>
-                            <span class="text-sm lg:text-lg text-white font-light text-left self-start mb-5"></span>
-
-                        </div>
                         <div class="container flex flex-col">
-                            <img class="rounded-2xl w-12/12 mx-auto shadow-2xl hover:scale-125 transition duration-300" src="../assets/bt3.png" alt="">
-                            <span class="text-sm text-white font-thin mb-5 text-center">Screenshot of "My Tests" page</span>
                             <img class="rounded-2xl w-12/12 mx-auto shadow-2xl hover:scale-125 transition duration-300" src="../assets/btcreatetest.png" alt="">
                             <span class="text-sm text-white font-thin mb-5 text-center">Screenshot of "Create Test" page</span>
                             <!-- <span class="text-lg font-light text-white">The photo above shows the "My Tests" portion of the website, in which the user can spectate </span> -->
                         </div>
+                        <div class="container flex flex-col justify-start items-center w-10/12 mx-auto gap-3">
+                            <h1 class="text-white text-left self-start text-2xl lg:text-3xl font-light"> I needed a way to incentivize users voting on other tests.</h1>
+                            <span class="text-sm lg:text-lg text-white font-light text-left self-start mb-5">To solve this problem, I decided a currency system was the best way to make sure that users's tests were voted on. A user first must vote on a specific number of thumbnail tests before they are able to create one themselves. This guarantees that a user's tests will be seen, and for valuable data to be returned to them.</span>
+                            <span class="text-sm lg:text-lg text-white font-light text-left self-start mb-5"></span>
+                        </div>
                     </div>
+                    <h1 class="text-2xl md:text-5xl text-white self-center font-light text-center mb-5 mt-5">Further Developments</h1>
+                    <h1 class="mb-5 text-xl md:text-3xl text-white font-thin w-11/12 mx-auto text-center">As of November, 2021:  BetterThumbnails is now recognized as a Limited Liability Corporation (LLC) in the state of Colorado.</h1>
+                    <h1 class="text-sm md:text-2xl font-thin text-white mx-auto w-11/12 text-center">The main functionality of the website has largely been completed. I am currently implementing the following things, but it currently must take a backseat to my University studies. </h1>
+                    <div class="grid md:grid-cols-2 grid-cols-1 w-11/12 mx-auto mt-3 gap-3 justify-items-center">
+                        <div class="container flex flex-col items-center">
+                            <h1 class="font-thin text-white text-4xl">YouTube API</h1>
+                            <span class="text-white font-light mt-2">One of the most valuable implementations I'm currently working on is the YouTube Data API, specifically the scope which allows BetterThumbnails to manage the user's YouTube channel. The ultimate goal is for the user to plug in two or more thumbnails, and for BetterThumbnails to take care of the rest. This means performing the actual A/B test, and then publishing the video to YouTube. Additionally, this would give BetterThumbnails the ability to perform testing on actual YouTube users, instead of just users of the site. *This will require a Chrome extension, which has been added to the list of things I need to do :)</span>
+                        </div>
+                        <div class="container flex flex-col items-center">
+                            <h1 class="font-thin text-white text-4xl">Google Cloud Vision</h1>
+                            <span class="text-white font-light mt-2">I'm implementing Google Cloud Vision's image API in order to determine certain aspects of thumbnails already uploaded, and currently being tested by the website. I'm doing this to help the user understand the characteristics of their most popular thumbnails, in order to emulate and optimize their thumbnail making process.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+</Modal>
+<!-- Senior Thesis Modal -->
+<Modal
+    v-model="showSeniorThesisModal"
+    :close="closeModal"
+    >
+        <div class="bg-gradient-to-r from-pink-500 to-pink-800 rounded-xl w-10/12 sm:w-8/12 h-auto pb-5">
+            <div class="container flex flex-col gap-5">
+                <svg class="w-8 h-8 mr-2 mt-1 self-end absolute hover:text-red-500 transition duration-300 cursor-pointer" @click="closeModal()" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <h1 class="sm:text-6xl text-3xl font-thin font-sans mx-auto text-white mt-5 text-center"> Senior Thesis Project</h1>
+                <div class="container flex flex-col">
+                    
                 </div>
             </div>
 
