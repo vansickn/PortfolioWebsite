@@ -562,8 +562,38 @@
             <div class="container flex flex-col gap-5">
                 <svg class="w-8 h-8 mr-2 mt-1 self-end absolute hover:text-red-500 transition duration-300 cursor-pointer" @click="closeModal()" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 <h1 class="sm:text-6xl text-3xl font-thin font-sans mx-auto text-white mt-5 text-center"> Senior Thesis Project</h1>
-                <div class="container flex flex-col">
-                    
+                <div class="container flex flex-col items-center">
+                    <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
+                       <div class="container flex flex-col justify-items-center w-11/12 gap-4">
+                            <img class="rounded-xl" src="../assets/boundingBoxes1.png" alt="" srcset="">
+                        </div>
+                        <div class="container flex flex-col items-center w-11/12">
+                            <h1 class="font-thin text-xl md:text-4xl text-white text-center mb-2">Understanding the role of Faces in YouTube thumbnails</h1>
+                            <span class="font-light text-base text-white">After nearly 13 years of watching YouTube every day, I have become extremely fascinated with the website. There are so many aspects to the process of creating a great YouTube video, but one of the most important, yet misunderstood, is the Thumbnail. When I first sought answers to the question, "What makes a good Thumbnail?" the internet failed me. There is no great evidence or data to distinguish great thumbnails from the rest of the pack.</span>
+                            <span class="font-light text-base text-white">With this question in mind, I explored the many different categories of YouTube Thumbnails, and found that a very common type was a Thumbnail that included a face. My project was then, what is the value of a face in a YouTube thumbnail? And, how can I measure it?</span>
+                        </div>   
+                    </div> 
+                </div>
+                <h1 class="sm:text-6xl text-3xl font-thin font-sans mx-auto text-white mt-5 text-center">Generating Thumbnails</h1>
+                <div class="container flex flex-col items-center">
+                    <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-4">
+                        <div class="container flex flex-col items-center w-11/12">
+                            <h1 class="text-xl text-white font-thin">Face-ism Ratio</h1>
+                            <img src="../assets/faceism.png" alt="">
+                        </div>   
+                        <div class="container flex flex-col items-center w-11/12">
+                            <h1 class="text-xl text-white font-thin">Emotion</h1>
+                            <img class="rounded-xl" src="../assets/boundingBoxes2.png" alt="" srcset=""> 
+                        </div>   
+                        <div class="container flex flex-col items-center w-11/12">
+                            <h1 class="text-xl text-white font-thin">Facial Symmetry</h1>
+                            <img class="rounded-xl" src="../assets/facialsymmetry.jpeg" alt="" srcset=""> 
+                        </div>   
+                       <!-- <div class="container flex flex-col justify-items-center w-11/12 gap-4">
+                            <img class="rounded-xl" src="../assets/boundingBoxes1.png" alt="" srcset="">
+                            <img class="rounded-xl" src="../assets/boundingBoxes2.png" alt="" srcset="">
+                        </div> -->
+                    </div> 
                 </div>
             </div>
 
