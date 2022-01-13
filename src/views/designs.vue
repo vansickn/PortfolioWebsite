@@ -14,7 +14,7 @@
         </div>
         <!-- END 10 bad designs -->
         <!-- Project 1 -->
-        <div class="container flex flex-row items-center justify-between bg-gradient-to-r from-gray-600 to-black rounded-2xl shadow-xl p-6 md:hover:scale-105 transition duration-300 cursor-pointer">
+        <div class="container flex flex-row items-center justify-between bg-gradient-to-r from-gray-600 to-black rounded-2xl shadow-xl p-6 md:hover:scale-105 transition duration-300 cursor-pointer" @click="showProject1 = true">
             <div class="container flex flex-row items-center gap-2 sm:gap-7">
                 <h1 class="text-2xl sm:text-5xl lg:text-6xl -mb-2">☝️</h1>
                 <h1 class="text-white font-thin text-lg sm:text-2xl md:text-4xl lg:text-6xl">Project 1</h1>
@@ -57,6 +57,57 @@
 
 </Modal>
 <!-- END BAD DESIGNS -->
+<!-- START PROJECT 1 -->
+<Modal
+    v-model="showProject1"
+    :close="closeModal"
+    >
+        <div class="bg-gradient-to-r from-gray-700 to-black rounded-xl w-11/12 sm:w-10/12 h-auto pb-5">
+            <div class="container flex flex-col gap-5 items-center justify-start mx-auto min-w-full">
+                <svg class="w-8 h-8 mr-2 text-white mt-1 self-end absolute hover:text-red-500 transition duration-300 cursor-pointer" @click="closeModal()" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <div class="container flex flex-row justify-center items-center w-12/12 gap-3 mx-auto">
+                    <h1 class="text-2xl sm:text-5xl lg:text-6xl sm:mt-7 mt-6">☝️</h1>
+                    <h1 class="sm:text-4xl lg:text-6xl text-2xl font-light font-sans text-white mt-5 text-left"> Project 1</h1>
+                </div>
+                <div class="container flex flex-col gap-3">
+                    <h1 class="text-2xl md:text-4xl text-center font-thin text-white">Balance</h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center w-11/12 mx-auto gap-2">
+                        <img class="w-9/12" src="../assets/proj1/balance1.jpg" alt="" srcset="">
+                        <img class="" src="../assets/proj1/balance2.jpg" alt="" srcset="">
+                    </div>
+                    <h1 class="text-2xl md:text-4xl text-center font-thin text-white">Economy</h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center w-11/12 mx-auto gap-2">
+                        <img class="w-9/12" src="../assets/proj1/economy2.jpg" alt="" srcset="">
+                        <img class="" src="../assets/proj1/economy1.jpg" alt="" srcset="">
+                    </div>
+                    <h1 class="text-2xl md:text-4xl text-center font-thin text-white">Repetition</h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center w-11/12 mx-auto gap-2">
+                        <img class="" src="../assets/proj1/repetition1.jpg" alt="" srcset="">
+                        <img class="" src="../assets/proj1/repetition2.jpg" alt="" srcset="">
+                    </div>
+                    <h1 class="text-2xl md:text-4xl text-center font-thin text-white">Rhythm</h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center w-11/12 mx-auto gap-2">
+                        <img class="" src="../assets/proj1/rythm1.jpg" alt="" srcset="">
+                        <img class="" src="../assets/proj1/rythm2.jpg" alt="" srcset="">
+                    </div>
+                    <h1 class="text-2xl md:text-4xl text-center font-thin text-white">Emphasis</h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center w-11/12 mx-auto gap-2">
+                        <img class="w-9/12" src="../assets/proj1/emphasis2.jpg" alt="" srcset="">
+                        <img class="" src="../assets/proj1/emphasis1.jpg" alt="" srcset="">
+                    </div>
+                    <h1 class="text-2xl md:text-4xl text-center font-thin text-white">Variety</h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center w-11/12 mx-auto gap-2">
+                        <img class="" src="src/assets/proj1/variety1.jpg" alt="" srcset="">
+                        <img class="w-9/12" src="../assets/proj1/variety2.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+</Modal>
+<!-- END PROJECT 1 -->
 </template>
 
 <script>
@@ -67,6 +118,7 @@ export default {
         },
         closeModal(){
             this.showBadDesigns = false;
+            this.showProject1 = false;
         }
     },
     mounted(){
@@ -76,6 +128,7 @@ export default {
     data(){
         return {
             showBadDesigns: false,
+            showProject1: false,
         }
     }
 }
