@@ -97,7 +97,7 @@
                     </div>
                     <h1 class="text-2xl md:text-4xl text-center font-thin text-white">Variety</h1>
                     <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center w-11/12 mx-auto gap-2">
-                        <img class="" src="src/assets/proj1/variety1.jpg" alt="" srcset="">
+                        <img class="" src="../assets/proj1/variety1.jpg" alt="" srcset="">
                         <img class="w-9/12" src="../assets/proj1/variety2.jpg" alt="" srcset="">
                     </div>
                 </div>
