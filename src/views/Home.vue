@@ -492,7 +492,7 @@
     v-model="showBetterThumbnailsModal"
     :close="closeModal"
     >
-        <div class="bg-gradient-to-r from-red-700 to-red-900 rounded-xl w-10/12 sm:w-8/12 h-auto pb-5">
+        <div class="bg-gradient-to-r from-red-700 to-red-900 rounded-xl w-10/12 sm:w-10/12 h-auto pb-5">
             <div class="container flex flex-col gap-5">
                 <svg class="w-8 h-8 mr-2 mt-1 self-end absolute hover:text-red-500 transition duration-300 cursor-pointer" @click="closeModal()" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 <h1 class="sm:text-6xl text-3xl font-thin font-sans mx-auto text-white mt-5 text-center"> BetterThumbnails LLC</h1>
@@ -558,7 +558,7 @@
     v-model="showSeniorThesisModal"
     :close="closeModal"
     >
-        <div class="bg-gradient-to-r from-pink-500 to-pink-800 rounded-xl w-10/12 sm:w-8/12 h-auto pb-5">
+        <div class="bg-gradient-to-r from-pink-500 to-pink-800 rounded-xl w-10/12 sm:w-10/12 h-auto pb-5">
             <div class="container flex flex-col gap-5">
                 <svg class="w-8 h-8 mr-2 mt-1 self-end absolute hover:text-red-500 transition duration-300 cursor-pointer" @click="closeModal()" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 <h1 class="sm:text-6xl text-3xl font-thin font-sans mx-auto text-white mt-5 text-center"> Senior Thesis Project</h1>
@@ -580,19 +580,63 @@
                         <div class="container flex flex-col items-center w-11/12">
                             <h1 class="text-xl text-white font-thin">Face-ism Ratio</h1>
                             <img src="../assets/faceism.png" alt="">
+                            <h1 class="text-base text-white font-light mt-2">
+                                The Face-ism Ratio is a fundamental principle of design which changes the way a viewer perceives a given image.
+                                For example, a High Face-ism ratio, such as the example on the right, illicits a perception of intellect, charisma, and competency on the viewer.
+                                Conversely, the image on the left illlicits a sexual, or intimate perception.
+                                In this way, YouTube Thumbnails' Face-ism Ratio can have different effects on the viewer.
+                                In the generation of my Thumbnails, I used Computer Vision and Google Cloud API to determine the coordinates of a face in the Thumbnail.
+                                Then, I was able to categorize thumbnails based on their respective Face-ism Ratios.   
+                            </h1>
                         </div>   
                         <div class="container flex flex-col items-center w-11/12">
                             <h1 class="text-xl text-white font-thin">Emotion</h1>
                             <img class="rounded-xl" src="../assets/boundingBoxes2.png" alt="" srcset=""> 
+                            <h1 class="text-base text-white font-light mt-2">
+                                Emotion is another important aspect of YouTube Thumbnails because it illicits an emotional reaction in the perciever. 
+                                So, again using Google Cloud API, I was able to categorize YouTube Thumbnails based on the emotions of Faces in the Thumbnail.
+                            </h1>
                         </div>   
                         <div class="container flex flex-col items-center w-11/12">
                             <h1 class="text-xl text-white font-thin">Facial Symmetry</h1>
                             <img class="rounded-xl" src="../assets/facialsymmetry.jpeg" alt="" srcset=""> 
+                            <h1 class="text-base text-white font-light mt-2">
+                                 Facial Symmetry is another aspect of the video that I derive from Google Cloud API's.
+                                 Generally, the attractiveness of a person is in some way attached to the symmetry of their facial features.
+                                 Additionally, it is a well known fact that people tend to view attractive people better than unattractive people in most aspects of life.
+                                 With that, it is not a far stretch to assume that people will click on a given link based on their attractiveness.
+                                 So, I needed group thumbnails by the attractiveness, or facial symmetry of a given person within a thumbnail. 
+                            </h1>
                         </div>   
                        <!-- <div class="container flex flex-col justify-items-center w-11/12 gap-4">
                             <img class="rounded-xl" src="../assets/boundingBoxes1.png" alt="" srcset="">
                             <img class="rounded-xl" src="../assets/boundingBoxes2.png" alt="" srcset="">
                         </div> -->
+                    </div> 
+                </div>
+                <h1 class="sm:text-6xl text-3xl font-thin font-sans mx-auto text-white mt-5 text-center"> The Experiment</h1>
+                <div class="container flex flex-col items-center">
+                    <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
+                       <div class="container flex flex-col justify-items-center w-11/12 gap-4">
+                            <img class="rounded-xl" src="../assets/thesis.png" alt="" srcset="">
+                        </div>
+                        <div class="container flex flex-col items-center w-11/12">
+                            <h1 class="font-thin text-xl md:text-4xl text-white text-center mb-2">A custom survey built and Designed in VueJS with a Firebase backend</h1>
+                            <span class="font-light text-base text-white">
+                                This survey is currently being given to Union College students, and gives them a series of 6-option sets of YouTube thumbnails based on a given search. 
+                                They are given a prompt based on each search, and then are tasked with clicking on the video that they would most likely click on. 
+                                The thumbnails rotate on a psuedo-random cycle, so that I am able to keep track of the position of each thumbnail in the list. 
+                                This is to prevent the data being skewed due to the ranking bias.
+                            </span>
+                            <span class="font-light text-base text-white mt-3">
+                                At the end of the questionnaire, they are shown the selections they made, in the same order that they were seen. 
+                                They are then asked why they made the choice that they did, so I am able to get even more data on the thought process that led to their decision.
+                            </span>
+                            <span class="font-light text-base text-white mt-3">
+                                If you would like
+                            </span>
+
+                        </div>   
                     </div> 
                 </div>
             </div>
